@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1660" width="980" height="1660" font-family="'Noto Sans CJK SC','Source Han Sans SC','PingFang SC','Microsoft YaHei',sans-serif">
+<style>
+  .bg{fill:#f7f5f1}
+  .ink{fill:#1a1c1f}
+  .mut{fill:#6b7280}
+  .acc{fill:#b4361f}
+  .rule{stroke:#c9cdd4;stroke-width:1}
+  .lead{stroke:#9aa1ab;stroke-width:1;stroke-dasharray:3 3;fill:none}
+  .cab{fill:#39434f}
+  .earth{fill:#dfe4e8;stroke:#8d959e;stroke-width:1.4}
+  .frame{fill:none;stroke:#1a1c1f;stroke-width:1.6}
+  .box{fill:#efece7;stroke:#c9cdd4;stroke-width:1}
+  text{fill:#1a1c1f}
+  .t-title{font-size:27px;letter-spacing:2px}
+  .t-sub{font-size:14px;fill:#6b7280;letter-spacing:1px}
+  .t-ax{font-size:13px;fill:#6b7280}
+  .t-an{font-size:16px}
+  .t-anb{font-size:16px;font-weight:700}
+  .t-sm{font-size:13px;fill:#6b7280}
+  .t-h{font-size:15px;font-weight:700;letter-spacing:1px}
+  .t-d{font-size:14px}
+  .t-acc{font-size:16px;font-weight:700;fill:#b4361f}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#14161a}
+    .ink,text{fill:#e6e8ec}
+    .mut,.t-ax,.t-sm,.t-sub{fill:#9aa1ab}
+    .cab{fill:#aab3bf}
+    .earth{fill:#2a3038;stroke:#7c848f}
+    .frame{stroke:#e6e8ec}
+    .box{fill:#1c1f25;stroke:#3a404a}
+    .acc,.t-acc{fill:#e07a5f}
+    .rule{stroke:#3a404a}
+  }
+</style>
+
+<rect class="bg" x="0" y="0" width="980" height="1660"/>
+
+<!-- ── 页眉 ── -->
+<text class="t-title" x="44" y="56">图版一 · 轨道升降机</text>
+<text class="t-sub" x="44" y="82">合审第 001 号文本 附图 · 战历 D+0 · 地球赤道锚系统 · 纵轴为对数刻度</text>
+<line class="rule" x1="44" y1="100" x2="936" y2="100"/>
+
+<!-- ── 高度轴 ── -->
+<line class="rule" x1="150" y1="243" x2="150" y2="1180"/>
+<g class="t-ax" text-anchor="end">
+  <line class="rule" x1="150" y1="1150" x2="162" y2="1150"/><text x="142" y="1155">10 km</text>
+  <line class="rule" x1="150" y1="923"  x2="162" y2="923"/> <text x="142" y="928">100 km　大气顶</text>
+  <line class="rule" x1="150" y1="787"  x2="162" y2="787"/> <text x="142" y="792">400 km</text>
+  <line class="rule" x1="150" y1="696"  x2="162" y2="696"/> <text x="142" y="701">1,000 km</text>
+  <line class="rule" x1="150" y1="470"  x2="162" y2="470"/> <text x="142" y="475">10,000 km</text>
+  <line class="rule" x1="150" y1="344"  x2="168" y2="344"/> <text x="142" y="349" font-weight="700" fill="#1a1c1f">35,786 km</text>
+  <line class="rule" x1="150" y1="243"  x2="168" y2="243"/> <text x="142" y="248" font-weight="700" fill="#1a1c1f">100,000 km</text>
+</g>
+
+<!-- ── 地球 ── -->
+<path class="earth" d="M 60 1300 Q 330 1150 600 1300 L 600 1360 L 60 1360 Z"/>
+<text class="t-sm" x="330" y="1338" text-anchor="middle">赤 道 · 海 上 锚 站</text>
+
+<!-- ── 缆索：下段（锥度 2.6，最粗在同步轨道）── -->
+<path class="cab" d="M 327 1185 L 333 1185 L 337 344 L 323 344 Z"/>
+<!-- 缆索：上段 -->
+<path class="cab" d="M 324 332 L 336 332 L 331 243 L 329 243 Z"/>
+<!-- 端点配重 -->
+<rect class="cab" x="312" y="228" width="36" height="16" rx="2"/>
+
+<!-- ── 断点 ── -->
+<g>
+  <path d="M 316 344 l 10 -4 l -6 -4 l 12 -4" fill="none" stroke="#b4361f" stroke-width="2.6"/>
+  <circle class="acc" cx="330" cy="338" r="4.5"/>
+</g>
+
+<!-- ── 轨道太阳发电群 ── -->
+<g>
+  <rect x="392" y="700" width="17" height="9" class="cab" opacity="0.85"/>
+  <rect x="418" y="683" width="17" height="9" class="cab" opacity="0.6"/>
+  <rect x="446" y="715" width="17" height="9" class="cab" opacity="0.35"/>
+  <rect x="474" y="694" width="17" height="9" class="cab" opacity="0.18"/>
+  <rect x="502" y="722" width="17" height="9" class="cab" opacity="0.08"/>
+  <text class="t-an" x="392" y="757">轨道太阳发电群</text>
+  <text class="t-sm" x="392" y="777">城里一半的电从这上面下来</text>
+  <text class="t-acc" x="392" y="800">D+0 当日：一颗一颗烧掉</text>
+  <text class="t-sm" x="392" y="820">他数到第八个的时候，前面几个已经找不到了</text>
+</g>
+
+<!-- ── 右侧注记 ── -->
+<line class="lead" x1="348" y1="236" x2="600" y2="236"/>
+<text class="t-anb" x="608" y="228">端点配重</text>
+<text class="t-sm"  x="608" y="250">整根缆索靠它张紧。它一断，上段就是一块甩出去的石头</text>
+
+<line class="lead" x1="344" y1="290" x2="600" y2="290"/>
+<text class="t-anb" x="608" y="284">上段　35,786 – 100,000 km</text>
+<text class="t-acc" x="608" y="306">不落回。走出地月系</text>
+
+<line class="lead" x1="340" y1="344" x2="600" y2="344"/>
+<text class="t-acc" x="608" y="338">◤ 切断点 · 同步轨道 · 09:52:41</text>
+<text class="t-sm"  x="608" y="360">此高度以上离心占优，以下引力占优——</text>
+<text class="t-sm"  x="608" y="379">所以断在这里，一半上天，一半落地</text>
+
+<line class="lead" x1="337" y1="600" x2="600" y2="600"/>
+<text class="t-anb" x="608" y="594">下段　0 – 35,786 km</text>
+<text class="t-sm"  x="608" y="616">塌落用时 5 小时 14 分（半椭圆近似）</text>
+<text class="t-sm"  x="608" y="635">一段一段进大气，边进边烧，从东往西沿赤道铺过去</text>
+<text class="t-acc" x="608" y="658">十万公里的东西，能绕赤道两圈半</text>
+
+<line class="lead" x1="335" y1="923" x2="600" y2="923"/>
+<text class="t-anb" x="608" y="917">大气顶　100 km</text>
+<text class="t-sm"  x="608" y="939">再入段起点。落区带：沿赤道的一条窄条</text>
+
+<line class="lead" x1="333" y1="1120" x2="600" y2="1120"/>
+<text class="t-anb" x="608" y="1114">锥度 2.6</text>
+<text class="t-sm"  x="608" y="1136">缆索在同步轨道最粗，两端最细——</text>
+<text class="t-sm"  x="608" y="1155">因为那里承的是整根的重量</text>
+
+<line class="rule" x1="44" y1="1385" x2="936" y2="1385"/>
+
+<!-- ── 时间线 ── -->
+<text class="t-h" x="44" y="1414">D+0 · 一百零五分钟 ＝ 三 × 单程光时（当日 4.20 AU／35.0 分）</text>
+<line class="rule" x1="60" y1="1452" x2="900" y2="1452"/>
+<g>
+  <circle class="ink" cx="70"  cy="1452" r="4"/>
+  <circle class="ink" cx="240" cy="1452" r="4"/>
+  <circle class="ink" cx="410" cy="1452" r="4"/>
+  <circle class="acc" cx="580" cy="1452" r="5.5"/>
+  <circle class="acc" cx="860" cy="1452" r="4"/>
+</g>
+<g class="t-d" text-anchor="middle">
+  <text x="70"  y="1440">08:07</text>
+  <text x="240" y="1440">08:42</text>
+  <text x="410" y="1440">09:17</text>
+  <text x="580" y="1440" class="t-acc">09:52:41</text>
+  <text x="860" y="1440" class="t-acc">15:07</text>
+</g>
+<g class="t-sm" text-anchor="middle">
+  <text x="70"  y="1476">一面测试光帆的</text><text x="70"  y="1493">调制被耀斑打坏</text>
+  <text x="240" y="1476">地球看见。检验器</text><text x="240" y="1493">依冻结规则判定并开火</text>
+  <text x="410" y="1476">波束抵达木卫四</text><text x="410" y="1493">光帆被击毁 · 无人死亡</text>
+  <text x="580" y="1476">回击抵达地球</text><text x="580" y="1493">缆索被切 · 回执开始入站</text>
+  <text x="860" y="1476">下段落地（自算）</text><text x="860" y="1493">测控口公告 15:16</text>
+</g>
+<text class="t-sm" x="44" y="1528">你看见它开火的那一刻，就是你被击中的那一刻——光速武器没有预警。这条时间线上没有一处违规：每一份回执都有效，抽查全过。</text>
+
+<!-- ── 数据块 ── -->
+<rect class="box" x="44" y="1548" width="892" height="92" rx="3"/>
+<text class="t-h" x="60" y="1573">地球 · 战前</text>
+<g class="t-sm">
+  <text x="60"  y="1597">升降机建成 2062｜总长 100,000 km｜运力 ~10⁶ t/yr｜比强度 ~50 MYuri（全书唯一一处材料学乐观设定）</text>
+  <text x="60"  y="1617">缆索原料：从大气里刮回来的碳 469 Gt → 石墨 213 km³ ＝ 边长 6 km 的立方体。让它发烧的分子，变成了它上天的绳子</text>
+  <text x="60"  y="1637">文明功率 ~64 TW（He-3 约 3,400 t/yr）｜热墙可容忍上限 500 TW ＝ +0.8 K｜宪章 41 条｜引力井 11.2 km/s（木卫四的 21 倍）</text>
+</g>
+</svg>
